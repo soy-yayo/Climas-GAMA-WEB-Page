@@ -1,0 +1,215 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;	
+	background: #f3f3f3;
+	width: fit-content;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+li { 
+	list-style: none;
+}
+
+
+/* * ============ HEADER ========== */
+
+nav {
+
+	position: sticky;
+	top: 0;
+	min-width: 380px;
+	max-width: 960px;
+	height: 180px;
+}
+
+.nav-container {
+	background: linear-gradient(to bottom, #2D3E62, #D9E3FA, #F3F3F3);
+	height: 100%;
+}
+
+.img-nav-name {
+	text-align: center;
+}
+
+
+.nav-name-logo {
+	max-width: 350px;
+	margin: 20px 0;
+}
+
+.p-container-items {
+	text-align: justify;
+}
+
+.nav-container-items { 
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.nav-container-items a {
+	margin: 0 15px;
+	padding: 10px 0 0 0;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #1B2741;
+	border-bottom: 3px solid #2D3E62;
+}
+
+
+
+/* * ===== CONTENEDOR IMAGEN ====== */
+.principal-img-container{
+	margin: 15px;
+}
+
+.principal-img-container img {
+	width: 100%;
+}
+/* * ============ MAIN ============ */
+
+.nosotros-container {
+	width: 75%;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+
+
+.servicios-container {
+	width: 75%;
+	margin: 0 auto;
+	text-align: justify;
+	
+}
+
+.servicios-trabajo-img-container {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.servicios-trabajo-img-container img {
+		width: 100%;
+}
+
+.servicios-trabajo-img-container p{
+	text-align: center;
+}
+
+.title {
+	color: #1B2741;
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+
+.date-container {
+	min-height: 20px;
+    max-height: 25px;
+    max-width: 300px;
+    margin: 0 auto 20px;
+    border-bottom: solid 2px #1B2741;
+}
+.date {
+	text-align: center;
+}
+
+
+
+/* * ============ DEGRADADO ============ */
+.nosotros {
+	background: linear-gradient(to bottom, #F3F3F3 , #e8edfa, #dfe6f5 );
+	padding-bottom: 10px;
+}
+
+.servicios {
+	background: linear-gradient(to bottom, #dfe6f5 , #d3def5, #d4e0fa);
+}
+
+.clientes {
+	background: linear-gradient(to bottom,#d4e0fa, #CDDBF9, #C5D6FB);
+	position: relative;
+    padding: 15px 0 0 0;
+    top: -16px;
+}
+
+.contacto { 
+	background: linear-gradient(to bottom, #C5D6FB, #BCCFFA , #AEC4F7);
+	position: relative;
+    top: -35px;
+    padding: 10px 0 0 0;
+}
+/* ========== FOOTER ============ */
+
+/* * ====== MEDIA QUERIES ========= */
+
+@media (min-width: 961px) {
+	nav {
+		min-width: 961px;
+		max-width: 100%;
+		transition: 500ms;
+	}
+	.mision-vision {
+		display: grid;
+		grid-template-columns: 1fr 1px 1fr;
+	}
+
+	.vertical-line {
+		max-height: 150px;
+		border-left: 1px solid #1B2741;
+	}
+
+	.mision , .vision {
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	.servicios-container-items {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	}
+
+	.servicios-container-items ul {
+		text-align: center;
+	}
+
+	.contacto-items {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+}
+
+@media  (max-width: 960px) {
+
+	ul, ol {
+		padding-left: 0%;
+	}
+
+	nav {
+		height: 100px;
+		transition: 3s;
+	}
+	.nav-container-items {
+		display: none;
+	}
+
+	hr {
+		display: none;
+	}
+}
